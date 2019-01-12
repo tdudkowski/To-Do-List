@@ -1,11 +1,10 @@
     class Main {
       constructor() {
-        this.form = document.querySelector('form');
-        this.input = document.querySelector('input.add');
+        this.input = document.getElementById('add');
         this.button = document.querySelector('button');
         this.counter = document.querySelector('div>span');
         this.list = document.querySelector('ul');
-        this.inputSearch = document.querySelector('input.search');
+        this.inputSearch = document.getElementById('search');
 
         this.taskList = [];
         this.number = 0;
