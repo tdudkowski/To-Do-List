@@ -1,0 +1,95 @@
+        body {
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        form {
+            width: 100%;
+            min-height: 3rem;
+            background-color: coral;
+            padding: .5rem;
+        }
+
+        input {
+            line-height: 2rem;
+            border: 3px solid coral;
+            border-radius: 8px;
+        }
+
+        input:focus {
+            border: 3px solid #f00;
+        }
+
+        form button {
+            background-color: #fff;
+            border: 1px solid #999;
+            line-height: 2rem;
+            border-radius: 8px;
+        }
+
+        button:focus {
+            user-select: none;
+            outline: none;
+        }
+
+        form input:nth-of-type(1) {
+            border-radius: 8px 0 0 8px;
+            margin-right: 0;
+            border-right: none;
+        }
+
+        form button:nth-of-type(1) {
+            border-radius: 0 8px 8px 0;
+            margin-left: 0;
+            margin-right: 2rem;
+        }
+
+        div {
+            padding: .5rem;
+            background-color: #ddd;
+            color: #333;
+        }
+
+        div span {
+            font-weight: bold;
+            background-color: #000;
+            color: #fff;
+            padding: .5rem;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            padding: .3rem;
+        }
+
+        li:hover {
+            background-color: #f9f9f9;
+        }
+
+        li span {
+            font-size: .8rem;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            display: inline-block;
+            min-width: 20px;
+            margin-right: 1rem;
+            padding: 3px;
+        }
+
+        li button {
+            border: 1px solid #999;
+            border-radius: 7px;
+            padding: 2px;
+            line-height: .5rem;
+            font-size: .7rem;
+            margin-left: 1rem;
+            background-color: #f3f3f3;
+            vertical-align: super;
+        }
+
+        li button:hover {
+            cursor: default;
+        }
