@@ -83,7 +83,7 @@
               document.querySelector(`[data-key='${this.taskList[i].number}']`).addEventListener("click", () => {
                 document.querySelector(`[data-key='${this.taskList[i].number}']`).parentNode.remove();
                 delete this.taskList[i];
-                this.counter.textContent = this.taskList.length;
+                this.counter.textContent--;
               });
             }
           }
