@@ -2,8 +2,8 @@
       constructor() {
         this.input = document.getElementById('add');
         this.button = document.querySelector('button');
-        this.counter = document.querySelector('div>span');
-        this.list = document.querySelector('ul');
+        this.counter = document.getElementById('counter');
+        this.list = document.getElementById('list');
         this.inputSearch = document.getElementById('search');
 
         this.taskList = [];
@@ -50,7 +50,7 @@
           const createdLi = document.createElement('li');
           this.list.appendChild(createdLi);
           createdLi.innerHTML =
-            `<span>${this.taskList[i].number+1}. </span> ${this.taskList[i].task} <button data-key="${i}" class="remove">usuń</button>`;
+            `<span>${this.taskList[i].number+1}. </span> ${this.taskList[i].task} <button data-key="${i}" class="remove">delete</button>`;
           document.querySelector(`[data-key='${i}']`).addEventListener("click", that.removeElement.bind(this));
         }
       }
@@ -79,7 +79,7 @@
               this.list.appendChild(createdLi);
               let that = this;
               createdLi.innerHTML =
-                `<span>${this.taskList[i].number+1}. </span> ${this.taskList[i].task} <button data-key="${this.taskList[i].number}" class="remove">usuń</button>`;
+                `<span>${this.taskList[i].number+1}. </span> ${this.taskList[i].task} <button data-key="${this.taskList[i].number}" class="remove">delete</button>`;
               document.querySelector(`[data-key='${this.taskList[i].number}']`).addEventListener("click", () => {
                 document.querySelector(`[data-key='${this.taskList[i].number}']`).parentNode.remove();
                 delete this.taskList[i];

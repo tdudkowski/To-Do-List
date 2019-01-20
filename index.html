@@ -12,15 +12,28 @@
 
 <body>
     <form action="">
-        <label for="">Wpisz treść zadania: </label><input type="text" id="add"><button type="button">Dodaj</button>
-        <label for=""> Wyszukaj: </label><input type="text" id="search">
+        <label for="">Write next element (task): </label><input type="text" id="add"><button type="button">ADD</button>
+        <hr>
+        <label for=""> Search: </label><input type="text" id="search">
     </form>
-    <div>Liczba zadań: <span>0</span></div>
-    <ul></ul>
-    <hr>
-    <p>No problems known, all seems resolved. Needs some polishing.</p>
-    <p>Wygląda na to, że działa bez błędów. Do zrobienia dopracowanie wyglądu.</p>
-
+    <div>Number of list's elements (tasks): <span id="counter">0</span></div>
+    <main>
+        <ul id="list"></ul>
+        <aside>
+            <p>This is a To-Do List with a search, written in Javascript. Task done as a part of JavaScript course.</p>
+            <h3>Info</h3>
+            <ul>
+                <li>Any text written becomes next element of a list, every element has its own unique number.</li>
+                <li>Numbers are given in sequence, and they're not changing.</li>
+                <li>Every element can be deleted; in both modes: normal and search.</li>
+                <li>Elements can be searched by its content.</li>
+            </ul>
+            <h3>ToDo</h3>
+            <ul>
+                <li>Better code, more options.</li>
+            </ul>
+        </aside>
+    </main>
     <script src="main.js"></script>
 </body>
 
