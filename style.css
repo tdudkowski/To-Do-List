@@ -20,6 +20,7 @@
 
         input {
             line-height: 2rem;
+            width: 100%;
             border: 2px solid transparent;
             border-radius: 8px;
             box-sizing: content-box;
@@ -33,34 +34,10 @@
 
         input+button {
             line-height: 2rem;
-            border: 2px solid transparent;
-            border-width: 2px 2px 2px 0;
+            width: 100%;
             box-sizing: border-box;
             background-color: #efefef;
             border-radius: 6px;
-        }
-
-        input:focus+button {
-            outline: none;
-            border-color: #d66;
-            box-shadow: 0 0 20px rgba(255, 0, 0, .9);
-        }
-
-        button:focus {
-            user-select: none;
-            outline: none;
-        }
-
-        form input:nth-of-type(1) {
-            border-radius: 8px 0 0 8px;
-            margin-right: 0;
-            border-right: none;
-        }
-
-        form button:nth-of-type(1) {
-            border-radius: 0 8px 8px 0;
-            margin-left: 0;
-            margin-right: 2rem;
         }
 
         main {
@@ -135,7 +112,46 @@
             cursor: pointer;
         }
 
+        @media (min-width: 600px) {
+            input {
+                width: 20rem;
+            }
+
+            input+button {
+                width: auto;
+                border: 2px solid transparent;
+                border-width: 2px 2px 2px 0;
+            }
+
+            input:focus+button {
+                outline: none;
+                border-color: #d66;
+                box-shadow: 0 0 20px rgba(255, 0, 0, .9);
+            }
+
+            button:focus {
+                user-select: none;
+                outline: none;
+            }
+
+            form input:nth-of-type(1) {
+                border-radius: 8px 0 0 8px;
+                margin-right: 0;
+                border-right: none;
+            }
+
+            form button:nth-of-type(1) {
+                border-radius: 0 8px 8px 0;
+                margin-left: 0;
+                margin-right: 2rem;
+            }
+        }
+
         @media (min-width: 900px) {
+            input {
+                width: 15rem;
+            }
+
             form hr {
                 display: none;
             }
