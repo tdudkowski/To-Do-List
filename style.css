@@ -53,6 +53,19 @@
             background-color: #efefef;
         }
 
+        nav {
+            background-color: #efefef;
+            border: 1px solid #999;
+            border-radius: 5px;
+            padding: .5rem;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            padding: .5rem 0;
+            color: #333;
+        }
+
         div {
             padding: .5rem;
             color: #333;
